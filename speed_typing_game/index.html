@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WordBeater</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>WordBeater</h1>
+    </header>
+    <main>
+      <!-- Word & Input -->
+      <div style="display: flex">
+        <label for="difficulty" style="padding-right: 1rem">Difficulty: </label>
+        <select name="difficulty" id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+      <div>
+        <p>You have <span id="seconds">5</span> seconds</p>
+      </div>
+      <h2 id="current-word">hello</h2>
+      <input
+        type="text"
+        placeholder="Start typing..."
+        id="word-input"
+        autofocus
+      />
+      <h4 id="message"></h4>
+
+      <!-- Time & Score Columns -->
+      <div>
+        <div>
+          <h3>
+            Time Left:
+            <span id="time" style="color: red">0</span>
+          </h3>
+        </div>
+        <div>
+          <h3>
+            Score:
+            <span id="score">0</span>
+          </h3>
+        </div>
+      </div>
+
+      <!-- Instructions -->
+      <div>
+        <div>
+          <div>
+            <h5>Instructions</h5>
+            <p>
+              Type each word in the given amount of seconds to score. To play
+              again, just type the current word. Your score will reset.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer style="position: fixed; bottom: 5%">
+      Built by
+      <a
+        href="https://cjdunteman.com/"
+        style="color: blue; text-decoration: none"
+        >CJ</a
+      >
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
